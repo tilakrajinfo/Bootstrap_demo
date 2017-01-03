@@ -1,0 +1,49 @@
+
+<html>
+<head>
+  <title>Bootstrap for popup</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  /* Popover */
+  .popover {
+      border: 2px dotted red;
+  }
+  /* Popover Header */
+  .popover-title {
+      background-color: #73AD21; 
+      color: #FFFFFF; 
+      font-size: 28px;
+      text-align:center;
+  }
+  /* Popover Body */
+  .popover-content {
+      background-color: coral;
+      color: #FFFFFF;
+      padding: 25px;
+  }
+  /* Popover Arrow */
+  .arrow {
+      border-right-color: red !important;
+  }
+  </style>
+</head>
+<body>
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<div class="container">
+  <h3>Message status</h3>
+  
+  <a href="#" data-toggle="popover" title="Message for you" data-content="Your messages has been sent.">Click here</a>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+
+</body>
+</html>
